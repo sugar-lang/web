@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
 
-    <title>JProMo</title>
+    <title>Models and Transformations as Modules</title>
   </head>
 
   <body>
@@ -16,15 +16,15 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/seba&#45;&#45;/sugarj">Fork Me on GitHub</a>
+          <a id="forkme_banner" href="https://github.com/sugar-lang">Fork Me on GitHub</a>
 
-          <a href="."><h1 id="project_title">JProMo</h1>
-          <h2 id="project_tagline">Model-oriented Programming</h2></a>
+          <a href="."><h1 id="project_title">SugarJ</h1>
+          <h2 id="project_tagline">Models and Transformations as Modules</h2></a>
 
-          <section id="downloads">
-            <a class="zip_download_link" href="https://github.com/seba&#45;&#45;/sugarj/zipball/jpromo">Download SugarJ as a .zip file</a>
-<!--            <a class="eclipse_download_link" href="http://update.sugarj.org/jpromo">SugarJ Eclipse plugin</a>  -->
-          </section>
+          <!-- <section id="downloads"> -->
+          <!--   <\!-- <a class="zip_download_link" href="https://github.com/sugar-lang/sugarj/zipball/jpromo">Download SugarJ as a .zip file</a> -\-> -->
+          <!--   <a class="eclipse_download_link" href="http://update.sugarj.org/">SugarJ Eclipse plugin</a>   -->
+          <!-- </section> -->
         </header>
     </div>
 
@@ -33,25 +33,32 @@
       <section id="main_content" class="inner">
 
 <p>
- Model-oriented programming is a novel programming paradigm, which
- is both a framework for model-driven development (MDD) and a programming language. 
- Like in MDD, software systems can be decomposed into models and transformations 
- and every software artifact can be reified as a model. Unlike MDD, models and
- transformations are tightly integrated into the module system of the programming language.
- The most distinguishing feature of model-oriented programming is that all dependencies between software entities 
- are explicit, which enables modular program understanding and separate
- compilation in spite of code-generating transformations.
+  Complex software systems often combine code artifacts written in different (domain-specific)
+  languages using build scripts to apply various program transformations. 
+  Such build scripts have a global nature that makes
+  it difficult to reason about the meaning and dependencies of code artifacts in a modular way.
+</p><p>
+  We propose to incorporate transformations, their input models, and their
+  applications into the module system of a programming language. In our design,
+  a programmer can define models and transformations as modules and can apply
+  transformations in import statements, thus declaring a requirement on the
+  generated artifact. Our design enables modular reasoning and separate
+  compilation by preventing hidden dependencies, and it supports mixing modeling
+  artifacts with code artifacts as well as higher-order transformations. We have
+  formalized our design and the aforementioned properties and have validated it
+  by an implementation and case studies that show its use for retargetable and
+  externally configurable software components.
 </p>
 
 
 <h2>Get the code</h2>
 
-<p>The source code of all components of JProMo is available in the JProMo branch at github:<br/>
-<a href="http://github.com/seba&#45;&#45;/sugarj/tree/jpromo">http://github.com/seba&#45;&#45;/sugarj/tree/jpromo</a>
+<p>The source code of the implementation and of the case studies is available at github:<br/>
 <ul>
-<li><a href="http://github.com/seba&#45;&#45;/sugarj/tree/jpromo/case-studies">case studies</a></li>
-<li><a href="http://github.com/seba&#45;&#45;/sugarj/tree/jpromo/compiler">compiler</a></li>
-<li><a href="http://github.com/seba&#45;&#45;/sugarj/tree/jpromo/editor">IDE</a></li>
+<li><a href="https://github.com/sugar-lang/case-studies/tree/mdd/model-driven">case studies</a></li>
+<li><a href="https://github.com/sugar-lang/compiler/tree/mdd">compiler</a></li>
+<li><a href="https://github.com/sugar-lang/compiler/blob/mdd/src/org/sugarj/driver/ImportCommands.java#L163">check against
+hidden dependencies</a></li>
 </ul>
 </p>
 
@@ -63,9 +70,9 @@
 </p>
 
 <ul>
-<li><a href="http://www.informatik.uni-marburg.de/%7Eseba/">Sebastian Erdweg</a>, project leader, University of Marburg</li>
-<li><a href="http://www.informatik.uni-marburg.de/%7Ekos/">Klaus Ostermann</a>, University of Marburg</li>
-<li>Jonas Pusch, University of Marburg</li>
+<li><a href="http://erdweg.org">Sebastian Erdweg</a>, TU Darmstadt</li>
+<li><a href="http://www.informatik.uni-marburg.de/%7Ekos">Klaus Ostermann</a>, University of Marburg</li>
+<!-- <li>Jonas Pusch, University of Marburg</li> -->
 </ul>
 
       </section>

@@ -22,7 +22,7 @@
           <h2 id="project_tagline">Library-based Language Extensibility</h2></a>
 
           <section id="downloads">
-            <a class="zip_download_link" href="https://github.com/seba&#45;&#45;/sugarj/zipball/master">Download SugarJ as a .zip file</a>
+            <!-- <a class="zip_download_link" href="https://github.com/seba&#45;&#45;/sugarj/zipball/master">Download SugarJ as a .zip file</a> -->
             <a class="eclipse_download_link" href="http://update.sugarj.org/">SugarJ Eclipse plugin</a>
           </section>
         </header>
@@ -71,41 +71,41 @@ The update dialog will let you select any number of our currently supported
 host languages: Java (*.sugj), Haskell (*.shs), Prolog (*.sugp).
 </p>
 
-<p>The source code of all components of SugarJ is available on <a href="http://github.com/seba&#45;&#45;/sugarj">github</a>.<br/>
-<a href="http://github.com/seba&#45;&#45;/sugarj/tree/master/case-studies">case studies</a>,
-<a href="http://github.com/seba&#45;&#45;/sugarj/tree/master/compiler">compiler</a>,
-<a href="http://github.com/seba&#45;&#45;/sugarj/tree/master/editor">IDE</a>,
-<a href="http://github.com/seba&#45;&#45;/sugarj/tree/master/language-libraries">language libraries</a>.
+<p>The source code of all components of SugarJ is available on github: <a href="http://github.com/sugar-lang">http://github.com/sugar-lang</a><br/>
+<a href="http://github.com/sugar-lang/case-studies">case studies</a>,
+<a href="http://github.com/sugar-lang/compiler">compiler</a>,
+<a href="http://github.com/sugar-lang/editor">IDE</a>,
 </p>
 
-<p>We also prepared some information on <a href="first-steps.html">first steps with SugarJ</a>.</p>
+<p>We also prepared some information on <a href="http://update.sugarj.org/index.html#GettingStarted">first steps with SugarJ</a>.</p>
 
 <h3>Subprojects</h3>
 
 We are currently developing a number of extensions of SugarJ. The relevant code can be found as follows:
 
 <ul>
-<li>Language extensibility for System Fomega (by <a href="http://www.user.tu-berlin.de/florenz/">Florian Lorenzen</a>):
-  in branch <a href="http://github.com/florenzen/sugarj/tree/fomega">fomega</a></li>
+<li>Language extensibility for Scala (by Florian Jakob):
+  in repository <a href="http://github.com/sugar-lang/lang-scala">lang-scala</a></li>
+<li>Software Evolution to Domain-Specific Languages: See our <a href="http://erdweg.org/publications/evolution-to-DSLs.pdf">SLE
+paper</a> and the <a href="https://github.com/sugar-lang/case-studies/tree/master/java-pet-store">Java Pet Store case study</a></li>
 <li>Language extensibility for JavaScript (by Bob Davison):
-  in repository <a href="http://github.com/bobd91/sugarjs/">sugarjs</a></li>
-<li>SugarHaskell: integrated into <a href="http://github.com/seba--/sugarj/tree/master">master branch</a> with case studies
-    located in <a href="http://github.com/seba--/sugarj/tree/master/case-studies/haskell">/case-studies/haskell</a>, file extension is ".shs"</li>
-<li>Layout-sensitive parsing: in repository <a href="http://github.com/seba--/layout-parsing/">layout-parsing</a></li>
-<li><a href="jpromo/index.html">Model-oriented programming</a>: in branch <a href="http://github.com/seba--/sugarj/tree/jpromo">jpromo</a></li>
-<li>Incremental introduction of DSLs for software maintenance: <a href="http://github.com/seba--/sugarj/tree/master/test-workspace/java-pet-store">Java Pet Store case study</a></li>
-<li>Language extensibility for any language: was in <a href="http://github.com/frieger/sugarj">frieger's sugarj fork</a>, now integrated into the SugarJ <a href="http://github.com/seba--/sugarj/tree/master">master branch</a></li>
+  in repository <a href="http://github.com/sugar-lang/lang-javascript">lang-javascript</a></li>
+<li><a href="models/index.html">Models and transformations as modules</a>: A
+  module system for model-driven development</li>
 </ul>
 
 
 <h2>Team</h2>
 
+Project lead: <a href="http://erdweg.org">Sebastian Erdweg</a>, TU Darmstadt
+
 <p>
   Get in touch, discuss, or simply stay up-to-date by joining the <a href="http://groups.google.com/group/sugarj">SugarJ Google group</a>.
 </p>
 
+
+Contributors:
 <ul>
-<li><a href="http://erdweg.org">Sebastian Erdweg</a>, project leader, TU Darmstadt</li>
 <li><a href="http://www.informatik.uni-marburg.de/%7Erendel/">Tillmann Rendel</a>, University of Marburg</li>
 <li><a href="http://www.uni-marburg.de/fb12/ps/team/kaestner">Christian Kästner</a>, University of Marburg</li>
 <li><a href="http://www.informatik.uni-marburg.de/%7Ekos/">Klaus Ostermann</a>, University of Marburg</li>
@@ -116,48 +116,52 @@ We are currently developing a number of extensions of SugarJ. The relevant code 
 <li>Jonas Pusch, University of Marburg</li>
 <li>Stefan Fehrenbach, University of Marburg</li>
 <li>Felix Rieger, University of Marburg</li>
+<li>Florian Jakob, TU Darmstadt</li>
+<li>Moritz Lichter, TU Darmstadt</li>
 </ul><h2>Publications</h2>
 
 
 <p>
+<strong>A Framework for Extensible Languages</strong><br>
+Sebastian Erdweg and Felix Rieger. 
+In <em>Proceedings of Conference on Generative Programming: Concepts &amp; Experiences (GPCE)</em>, pages 3–12. ACM, 2013.
+[ <a href="http://erdweg.org/publications/language-extensibility-framework.pdf">.pdf</a> ]
+
+<p>
 <strong>Extensible Languages for Flexible and Principled Domain Abstraction</strong><br>
 Sebastian Erdweg. PhD thesis, Philipps-Universit&auml;t Marburg, 2013.
-[ <a href="http://erdweg.org/publications.html#Erdweg13thesis">abstract</a>
-| <a href="http://erdweg.org/publications/dissertation.pdf">.pdf</a> ]
+[ <a href="http://erdweg.org/publications/dissertation.pdf">.pdf</a> ]
 
 <p>
 <strong>Embedding a Questionnaire DSL with SugarJ</strong><br>
 Sebastian Erdweg.
 In <em>Proceedings of Language Workbench Challenge (LWC)</em>, 2013. 
-[ <a href="http://erdweg.org/publications.html#Erdweg13a">abstract</a>
-| <a href="http://erdweg.org/publications/lwc13-questionnaire.pdf"> pdf </a> ]
+[ <a href="http://erdweg.org/publications/lwc13-questionnaire.pdf"> pdf </a> ]
 
 <p>
 <strong>Layout-sensitive Language Extensibility with SugarHaskell</strong><br>
 Sebastian Erdweg, Felix Rieger, Tillmann Rendel, and Klaus Ostermann.
-In <em>Proceedings of Haskell Symposium</em>, 2012. to appear.
-[ <a href="http://erdweg.org/publications.html#ErdwegRRO12">abstract</a>
-| <a href="http://erdweg.org/publications/sugarhaskell.pdf">.pdf</a> ]
+In <em>Proceedings of Haskell Symposium</em>, pages 149-160. ACM, 2012.
+[ <a href="http://erdweg.org/publications/sugarhaskell.pdf">.pdf</a> ]
 
 <p>
 <strong>Language Composition Untangled</strong><br>
 Sebastian Erdweg, Paolo G. Giarrusso, and Tillmann Rendel.
-In <em>Proceedings of Workshop on Language Descriptions, Tools and Applications (LDTA)</em>, 2012. to appear.
-  [ <a href="http://erdweg.org/publications.html#ErdwegGR12">abstract</a>
-  | <a href="http://erdweg.org/publications/languagecomposition.pdf">.pdf</a> ]</p>
+ In <em>Proceedings of Workshop on Language Descriptions, Tools and Applications
+(LDTA)</em>, 7:1-7:8. ACM, 2012.
+  [ <a href="http://erdweg.org/publications/languagecomposition.pdf">.pdf</a> ]</p>
 
 <p><strong>Growing a Language Environment with Editor Libraries</strong><br>
 Sebastian Erdweg and Lennart C. L. Kats and Tillmann Rendel and Christian Kästner and Klaus Ostermann and Eelco Visser.
 In <em>Proceedings of Conference on Generative Programming and Component Engineering (GPCE)</em>, pages 167–176. ACM, 2011.
-  [ <a href="http://erdweg.org/publications.html#ErdwegKRKOV11">abstract</a>
-  | <a href="http://erdweg.org/publications/editorlibs.pdf">.pdf</a> ]</p>
+  [ <a href="http://erdweg.org/publications/editorlibs.pdf">.pdf</a> ]</p>
 
 <p><strong>SugarJ: Library-based Syntactic Language Extensibility</strong><br>
 Sebastian Erdweg, Tillmann Rendel, Christian Kästner and Klaus Ostermann.
 In <em>Proceedings of Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA)</em>, pages 391–406. ACM, 2011. <strong>Distinguished Paper Award</strong>.
-  [ <a href="http://erdweg.org/publications.html#ErdwegRKO11">abstract</a>
-  | <a href="http://erdweg.org/publications/sugarj.pdf">.pdf</a> ]</p>
-      </section>
+  [ <a href="http://erdweg.org/publications/sugarj.pdf">.pdf</a> ]</p>
+
+</section>
     </div>
 
     <!-- FOOTER  -->
