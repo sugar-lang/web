@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
 
-    <title>Models and Transformations as Modules</title>
+    <title>Dependency Tracking and Separate Compilation for Model-Driven Software Development</title>
   </head>
 
   <body>
@@ -19,7 +19,7 @@
           <a id="forkme_banner" href="https://github.com/sugar-lang">Fork Me on GitHub</a>
 
           <a href="."><h1 id="project_title">SugarJ</h1>
-          <h2 id="project_tagline">Models and Transformations as Modules</h2></a>
+          <h2 id="project_tagline">Dependency Tracking and Separate Compilation for Model-Driven Software Development</h2></a>
 
           <!-- <section id="downloads"> -->
           <!--   <\!-- <a class="zip_download_link" href="https://github.com/sugar-lang/sugarj/zipball/jpromo">Download SugarJ as a .zip file</a> -\-> -->
@@ -33,27 +33,27 @@
       <section id="main_content" class="inner">
 
 <p>
-  Model-driven development is a pragmatic approach to software development that
-  embraces domain-specific languages (DSLs), where models correspond to DSL
-  programs. A distinguishing feature of model-driven development is that clients
-  of a model can select from an open set of alternative semantics of the model
-  by applying different model transformation. However, in existing model-driven
-  frameworks, dependencies between models, model transformations, and generated
-  code artifacts are either implicit or globally declared in build scripts,
-  which impedes modular reasoning, separate compilation, and scalability in
-  general.
-</p><p>
-  We propose the design of a module system that incorporates models and model
-  transformations as modules. A programmer can apply transformations in import
-  statements, thus declaring a dependency on the generated artifact. Our design
-  enables modular reasoning and separate compilation by preventing hidden
-  dependencies, and it supports mixing modeling artifacts with code artifacts as
-  well as higher-order transformations. We have formalized our design and the
-  aforementioned properties and have validated it by an implementation and case
-  studies that show that our module system supports common applications of
-  model-driven development.
-</p>
 
+      Model-driven development is a pragmatic approach to software development
+      that embraces domain-specific languages (DSLs), where models correspond to
+      DSL programs. A distinguishing feature of model-driven development is that
+      clients of a model can select from an open set of alternative semantics of
+      the model by applying different model transformation.  However, in
+      existing model-driven frameworks, dependencies between models, model
+      transformations, and generated code artifacts are either implicit or
+      globally declared in build scripts, which impedes modular reasoning,
+      separate compilation, and scalability in general.
+</p><p>
+      We propose the design of a module system that incorporates models and
+      model transformations as modules. A programmer can apply transformations
+      in import statements, thus declaring a dependency on the generated
+      artifact. Our design enables modular reasoning and separate compilation by
+      preventing hidden dependencies, and it supports mixing modeling artifacts
+      with code artifacts as well as higher-order transformations. We have
+      formalized our design and the aforementioned properties and have validated
+      it by an implementation and case studies that show that our module system
+      supports common applications of model-driven development.
+</p>
 
 <h2>Get the code</h2>
 
@@ -61,7 +61,7 @@
 <ul>
 <li><a href="https://github.com/sugar-lang/case-studies/tree/mdd/model-driven">case studies</a></li>
 <li><a href="https://github.com/sugar-lang/compiler/tree/mdd">compiler</a></li>
-<li><a href="https://github.com/sugar-lang/compiler/blob/mdd/src/org/sugarj/driver/ImportCommands.java#L163">check against
+<li><a href="https://github.com/sugar-lang/compiler/blob/mdd/src/org/sugarj/driver/ImportCommands.java#L170">check against
 hidden dependencies</a></li>
 </ul>
 </p>
