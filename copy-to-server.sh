@@ -1,7 +1,9 @@
-SERVER=xx00seba@clientssh2.rbg.informatik.tu-darmstadt.de
+SERVER=xx00seba@clientssh3.rbg.informatik.tu-darmstadt.de
 DIR=.public_html/projects/sugarj
-SERVER2=login.mathematik.uni-marburg.de
-DIR2=public_html/projects/sugarj
 
-rsync -av --exclude=".svn" --exclude=".git" --exclude="*~" --exclude="*.sh" --exclude=".DS_Store" . $SERVER:$DIR
-rsync -av --exclude=".svn" --exclude=".git" --exclude="*~" --exclude="*.sh" --exclude=".DS_Store" . $SERVER2:$DIR2
+rsync -av --exclude=".svn" --exclude=".seba--.github.com" --exclude="*.sh" --exclude=".DS_Store" . $SERVER:$DIR
+
+SERVER=seba@login.mathematik.uni-marburg.de
+DIR=public_html/projects/sugarj
+
+rsync -av --exclude=".svn" --exclude=".seba--.github.com" --exclude="*.sh" --exclude=".DS_Store" . $SERVER:$DIR

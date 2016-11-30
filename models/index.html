@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
 
-    <title>Dependency Tracking and Separate Compilation for Model-Driven Software Development</title>
+    <title>A Module-System Discipline for Model-Driven Software Development</title>
   </head>
 
   <body>
@@ -19,7 +19,7 @@
           <a id="forkme_banner" href="https://github.com/sugar-lang">Fork Me on GitHub</a>
 
           <a href="."><h1 id="project_title">SugarJ</h1>
-          <h2 id="project_tagline">Dependency Tracking and Separate Compilation for Model-Driven Software Development</h2></a>
+          <h2 id="project_tagline">A Module-System Discipline for Model-Driven Software Development</h2></a>
 
           <!-- <section id="downloads"> -->
           <!--   <\!-- <a class="zip_download_link" href="https://github.com/sugar-lang/sugarj/zipball/jpromo">Download SugarJ as a .zip file</a> -\-> -->
@@ -34,25 +34,24 @@
 
 <p>
 
-      Model-driven development is a pragmatic approach to software development
-      that embraces domain-specific languages (DSLs), where models correspond to
-      DSL programs. A distinguishing feature of model-driven development is that
-      clients of a model can select from an open set of alternative semantics of
-      the model by applying different model transformation.  However, in
-      existing model-driven frameworks, dependencies between models, model
-      transformations, and generated code artifacts are either implicit or
-      globally declared in build scripts, which impedes modular reasoning,
-      separate compilation, and scalability in general.
+  Model-driven development is a pragmatic approach to software development that
+  embraces domain-specific languages (DSLs), where models correspond to DSL
+  programs. A distinguishing feature of model-driven development is that clients
+  of a model can select from an open set of alternative semantics of the model
+  by applying different model transformation.
+  However, in existing model-driven frameworks, dependencies between models,
+  model transformations, and generated code artifacts are either implicit or
+  globally declared in build scripts, which impedes modular reasoning, separate
+  compilation, and programmability in general. 
 </p><p>
-      We propose the design of a module system that incorporates models and
-      model transformations as modules. A programmer can apply transformations
-      in import statements, thus declaring a dependency on the generated
-      artifact. Our design enables modular reasoning and separate compilation by
-      preventing hidden dependencies, and it supports mixing modeling artifacts
-      with code artifacts as well as higher-order transformations. We have
-      formalized our design and the aforementioned properties and have validated
-      it by an implementation and case studies that show that our module system
-      supports common applications of model-driven development.
+  We propose the design of a new module system that incorporates models and model
+  transformations as modules. A programmer can apply transformations in import
+  statements, thus declaring a dependency on generated code artifacts. Our design
+  enables modular reasoning and separate compilation by preventing hidden
+  dependencies, and it supports mixing modeling artifacts with conventional code artifacts as
+  well as higher-order transformations. We have formalized our design and the
+  aforementioned properties and have validated it by an implementation and case
+  studies that show that our module system successfully integrates model-driven development into conventional programming languages.
 </p>
 
 <h2>Get the code</h2>
@@ -69,13 +68,13 @@ hidden dependencies</a></li>
 
 <h2>Team</h2>
 
-<p>
-  Get in touch, discuss, or simply stay up-to-date by joining the <a href="http://groups.google.com/group/sugarj">SugarJ Google group</a>.
-</p>
+<!-- <p> -->
+<!--   Get in touch, discuss, or simply stay up-to-date by joining the <a href="http://groups.google.com/group/sugarj">SugarJ Google group</a>. -->
+<!-- </p> -->
 
 <ul>
-<li><a href="http://erdweg.org">Sebastian Erdweg</a>, TU Darmstadt</li>
-<li><a href="http://www.informatik.uni-marburg.de/%7Ekos">Klaus Ostermann</a>, University of Marburg</li>
+<li><a href="http://erdweg.org">Sebastian Erdweg</a>, TU Delft</li>
+<li><a href="http://www.informatik.uni-marburg.de/%7Ekos">Klaus Ostermann</a>, University of Tübingen</li>
 <!-- <li>Jonas Pusch, University of Marburg</li> -->
 </ul>
 
